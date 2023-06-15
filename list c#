@@ -6,15 +6,15 @@ class Program
     static void Main()
     {
         List<string> listeChaines = new List<string>();
-        listeChaines.Add("Première chaîne");
-        listeChaines.Add("Deuxième chaîne");
-        listeChaines.Add("Troisième chaîne");
+        listeChaines.Add("1");
+        listeChaines.Add("2");
+        listeChaines.Add("3");
 
         listeChaines.RemoveAt(0);
 
-        listeChaines.Remove("Troisième chaîne");
+        listeChaines.Remove("3");
 
-        listeChaines[1] = "Deuxième chaîne modifiée";
+        listeChaines[1] = "2";
 
         foreach (string chaine in listeChaines)
         {
