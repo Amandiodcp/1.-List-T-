@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<string> listeChaines = new List<string>();
+        listeChaines.Add("Première chaîne");
+        listeChaines.Add("Deuxième chaîne");
+        listeChaines.Add("Troisième chaîne");
+
+        listeChaines.RemoveAt(0);
+
+        listeChaines.Remove("Troisième chaîne");
+
+        listeChaines[1] = "Deuxième chaîne modifiée";
+
+        foreach (string chaine in listeChaines)
+        {
+            Console.WriteLine(chaine);
+        }
+    }
+}
